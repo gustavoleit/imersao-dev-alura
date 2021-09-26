@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+
+* {
+  color: var(--color-fourth);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'Poppins', sans-serif;
+  --color-first: #232526;
+  --color-second: #1a1a1a;
+  --color-third: #424344;
+  --color-fourth: #fff;
+  --color-fifth: #5c6264;
+}
+
+main {
+  font-family: var(--font);
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-first);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form {
+  min-width: 390px;
+  min-height: 400px;
+  background-color: var(--color-second);
+  border-radius: 15px;
+  box-shadow: 0 0 3rem rgba(12, 12, 12, 0.5);
+}
+
+input[type='Number'] {
+  color: var(--color-first);
+  text-align: center;
+  width: 255px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type='Button'] {
+  width: 255px;
+  height: 30px;
+  margin: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-third);
+  transition: ease-in-out 0.3s;
+}
+
+input[type='Button']:hover {
+  background: var(--color-fifth);
+  letter-spacing: 0.3px;
+}
+
+form h2 {
+  padding-top: 15px;
+}
+
+.alura-logo {
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-height: 700px) {
+  .container {
+    min-height: 600px;
+  }
+}

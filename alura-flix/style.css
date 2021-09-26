@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font: 'Poppins', sans-serif;
+  --color-first: #151515;
+  --color-second: #da1e26;
+  --color-third: #fff;
+}
+
+body {
+  font-family: var(--font);
+  text-align: center;
+  background-color: var(--color-first);
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1,
+p {
+  color: var(--color-third);
+  margin-bottom: 0.8rem;
+}
+
+.alura-logo {
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#listaFilmes img:hover {
+  transform: scale(1.1);
+}
+
+.form-wrapper {
+  margin: 0 0 0.7rem;
+}
+
+.form-wrapper input {
+  width: 205px;
+  height: 30px;
+  font-weight: 0;
+  caret-color: var(--color-first);
+  text-align: center;
+  border: none;
+  margin: 5px;
+}
+
+.form-wrapper button {
+  width: 205px;
+  height: 30px;
+  border: none;
+  color: var(--color-third);
+  background: var(--color-second);
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.form-wrapper button:hover {
+  letter-spacing: 0.3px;
+  opacity: 0.8;
+}
+
+#listaFilmes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#listaFilmes img {
+  max-height: 250px;
+  margin: 15px;
+  border-radius: 5px;
+  transition: ease 0.3s;
+}
+
+.boxFilme {
+  position: relative;
+}
+
+.tituloFilme {
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  max-width: 170px;
+}
+
+.tituloFilme {
+  font-size: 1rem;
+  color: var(--color-third);
+  margin: 0 auto;
+  display: block;
+  max-width: 170px;
+}
+
+.deleteIcon {
+  color: var(--color-second);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.deleteIcon.active {
+  opacity: 1;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AluraFlix</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Aluraflix</h1>
+      <p>Qual é o seu filme favorito?</p>
+      <section class="form-wrapper">
+        <input type="text" id="titulo" name="titulo" placeholder="insira o titulo da imagem" autocomplete="off"/><br/>
+        <input type="text" id="filme" name="filme" placeholder="insira endereço de imagem" autocomplete="off"/><br/>
+        <button onClick="adicionarFilme()">Adicionar Filme</button>
+      </section>
+    </main>
+    <div id="listaFilmes"></div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo da alura" class="alura-logo"/>
+    </a>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
